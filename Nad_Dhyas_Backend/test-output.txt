@@ -1,0 +1,176 @@
+Testing Invoices Query...
+donation_fee count: 78
+admission_form count: 69
+Join count (df + af): 78
+Query rows: [
+  {
+    "donation_id": 159,
+    "admission_id": 138,
+    "full_name": "Karad",
+    "branch": "Karad"
+  },
+  {
+    "donation_id": 158,
+    "admission_id": 137,
+    "full_name": "Krantismruti",
+    "branch": "Krantismruti, Satara"
+  },
+  {
+    "donation_id": 157,
+    "admission_id": 136,
+    "full_name": "Godoli",
+    "branch": "Godoli, Satara"
+  },
+  {
+    "donation_id": 156,
+    "admission_id": 135,
+    "full_name": "Karmaveer",
+    "branch": "Karmaveer Nagar Society"
+  },
+  {
+    "donation_id": 155,
+    "admission_id": 134,
+    "full_name": "TestX",
+    "branch": "Karad"
+  }
+]
+Branches in admission_form: [
+  "Karmaveer Nagar Society",
+  "Godoli, Satara",
+  "Karad",
+  "Krantismruti, Satara"
+]
+Testing Invoices Query...
+donation_fee count: 78
+admission_form count: 69
+Join count (df + af): 78
+Query rows: [
+  {
+    "donation_id": 159,
+    "admission_id": 138,
+    "full_name": "Karad",
+    "branch": "Karad"
+  },
+  {
+    "donation_id": 158,
+    "admission_id": 137,
+    "full_name": "Krantismruti",
+    "branch": "Krantismruti, Satara"
+  },
+  {
+    "donation_id": 157,
+    "admission_id": 136,
+    "full_name": "Godoli",
+    "branch": "Godoli, Satara"
+  },
+  {
+    "donation_id": 156,
+    "admission_id": 135,
+    "full_name": "Karmaveer",
+    "branch": "Karmaveer Nagar Society"
+  },
+  {
+    "donation_id": 155,
+    "admission_id": 134,
+    "full_name": "TestX",
+    "branch": "Karad"
+  }
+]
+Branches in admission_form: [
+  "Karmaveer Nagar Society",
+  "Godoli, Satara",
+  "Karad",
+  "Krantismruti, Satara"
+]
+Donation tables: [
+  {
+    "Tables_in_music_dept (%donation%)": "donation_counters"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "donation_record"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "godoli_satara_donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "karad_donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "karmaveer_nagar_donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "krantismruti_satara_donation_fee"
+  }
+]
+Testing Invoices Query...
+donation_fee count: 78
+admission_form count: 69
+Join count (df + af): 78
+Query rows: [
+  {
+    "donation_id": 159,
+    "admission_id": 138,
+    "full_name": "Karad",
+    "branch": "Karad"
+  },
+  {
+    "donation_id": 158,
+    "admission_id": 137,
+    "full_name": "Krantismruti",
+    "branch": "Krantismruti, Satara"
+  },
+  {
+    "donation_id": 157,
+    "admission_id": 136,
+    "full_name": "Godoli",
+    "branch": "Godoli, Satara"
+  },
+  {
+    "donation_id": 156,
+    "admission_id": 135,
+    "full_name": "Karmaveer",
+    "branch": "Karmaveer Nagar Society"
+  },
+  {
+    "donation_id": 155,
+    "admission_id": 134,
+    "full_name": "TestX",
+    "branch": "Karad"
+  }
+]
+Branches in admission_form: [
+  "Karmaveer Nagar Society",
+  "Godoli, Satara",
+  "Karad",
+  "Krantismruti, Satara"
+]
+Donation tables: [
+  {
+    "Tables_in_music_dept (%donation%)": "donation_counters"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "donation_record"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "godoli_satara_donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "karad_donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "karmaveer_nagar_donation_fee"
+  },
+  {
+    "Tables_in_music_dept (%donation%)": "krantismruti_satara_donation_fee"
+  }
+]
+karad_donation_fee count: 23
+godoli_satara_donation_fee count: 8
+karmaveer_nagar_donation_fee count: 41
+krantismruti_satara_donation_fee count: 8

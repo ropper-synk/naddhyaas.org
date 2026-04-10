@@ -1,0 +1,434 @@
+/* Loading & Error States */
+.loadingContainer,
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 40px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f4f6;
+    border-top-color: #ff3333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loadingText,
+.errorMessage {
+    margin-top: 20px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.errorTitle {
+    color: #ef4444;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.errorButton {
+    margin-top: 20px;
+    padding: 10px 24px;
+    background: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.errorButton:hover {
+    background: #cc0000;
+}
+
+/* Summary Card */
+.summaryCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summaryItem {
+    text-align: center;
+    color: white;
+}
+
+.summaryLabel {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.summaryValue {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Invoices Section */
+.invoicesSection {
+    margin-top: 30px;
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.invoicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* Invoice Card */
+.invoiceCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.invoiceCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.invoiceHeader {
+    background: linear-gradient(135deg, #ff3333 0%, #cc0000 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoiceNumber {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.invoiceDate {
+    font-size: 0.875rem;
+    opacity: 0.95;
+}
+
+.invoiceBody {
+    padding: 20px;
+}
+
+.invoiceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.invoiceRow:last-child {
+    border-bottom: none;
+}
+
+.invoiceLabel {
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.invoiceAmount {
+    color: #10b981;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.invoiceText {
+    color: #1f2937;
+    font-size: 0.875rem;
+    font-family: monospace;
+    background: #f9fafb;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.invoiceBadge {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.invoiceFooter {
+    padding: 16px 20px;
+    background: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+}
+
+.downloadBtn {
+    width: 100%;
+    padding: 10px;
+    background: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.downloadBtn:hover {
+    background: #cc0000;
+}
+
+/* Admission Form Section */
+.admissionFormSection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block !important;
+    width: 100%;
+    clear: both;
+    visibility: visible;
+    opacity: 1;
+}
+
+.admissionFormCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8b0000;
+    overflow: visible;
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    min-height: 200px;
+}
+
+.admissionFormCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admissionFormHeader {
+    background: linear-gradient(135deg, #8b0000 0%, #6b0000 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admissionFormTitle {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.admissionFormSubtitle {
+    font-size: 0.875rem;
+    opacity: 0.95;
+    color: white;
+}
+
+.admissionFormBody {
+    padding: 20px;
+}
+
+.admissionFormInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.admissionFormRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.admissionFormRow:last-child {
+    border-bottom: none;
+}
+
+.admissionFormLabel {
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.admissionFormValue {
+    color: #1f2937;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.admissionFormFooter {
+    padding: 16px 20px;
+    background: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+}
+
+.admissionFormDownloadBtn {
+    width: 100%;
+    padding: 10px;
+    background: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.admissionFormDownloadBtn:hover {
+    background: #6b0000;
+}
+
+/* Table layout (similar to admin) */
+.tableWrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.invoiceTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.invoiceTable thead {
+    background: linear-gradient(135deg, #ff3333 0%, #cc0000 100%);
+    color: white;
+}
+
+.invoiceTable th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.invoiceTable td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.invoiceTable tbody tr:hover {
+    background: #f9fafb;
+}
+
+.amountCell {
+    font-weight: 600;
+    color: #10b981;
+}
+
+.transactionCell {
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.actionsCell {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.readBtn {
+    padding: 6px 14px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.readBtn:hover {
+    background: #2563eb;
+}
+
+.deleteBtn {
+    padding: 6px 14px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+    background: #dc2626;
+}
+
+/* No Invoices State */
+.noInvoices {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6b7280;
+}
+
+.noInvoicesIcon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.noInvoices h3 {
+    font-size: 1.5rem;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.noInvoices p {
+    font-size: 1rem;
+    color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .summaryCard {
+        grid-template-columns: 1fr;
+    }
+
+    .invoicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .summaryValue {
+        font-size: 1.5rem;
+    }
+}

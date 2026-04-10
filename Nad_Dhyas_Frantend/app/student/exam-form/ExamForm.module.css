@@ -1,0 +1,395 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    padding: 40px;
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #f3f4f6;
+    border-top-color: #8b0000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loadingText {
+    margin-top: 16px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.unavailableContainer {
+    padding: 20px;
+}
+
+.unavailableCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.unavailableText {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0 0 12px 0;
+}
+
+.unavailableSubtext {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+}
+
+.dashboardLink {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+.dashboardLink:hover {
+    background: #6b0000;
+}
+
+.alreadyFilledWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 24px 20px;
+    box-sizing: border-box;
+}
+
+.alreadyFilledCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 32px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #0a0;
+}
+
+.alreadyFilledIcon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    background: #0a0;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alreadyFilledTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 12px 0;
+}
+
+.alreadyFilledText {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+}
+
+.examFormNo {
+    font-size: 1rem;
+    color: #333;
+    margin: 0 0 24px 0;
+}
+
+.alreadyFilledActions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.downloadPdfBtn {
+    padding: 12px 24px;
+    background: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.downloadPdfBtn:hover:not(:disabled) {
+    background: #6b0000;
+}
+.downloadPdfBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.formPageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 24px 20px;
+    box-sizing: border-box;
+}
+
+.formCard {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 28px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.required {
+    color: #c00;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: #8b0000;
+}
+
+.fileInput {
+    padding: 8px !important;
+}
+
+.photoHint {
+    font-size: 12px;
+    color: #666;
+    margin: 6px 0 0 0;
+}
+
+.photoPreview {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.photoPreview img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #8b0000;
+}
+.photoPreview span {
+    font-size: 13px;
+    color: #0a0;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 16px 0 8px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
+}
+
+.sectionHint {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 12px 0;
+}
+
+.musicGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+@media (max-width: 600px) {
+    .musicGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.musicCategory label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+.musicCategory select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.musicCategory select:disabled {
+    background: #f5f5f5;
+    color: #999;
+}
+
+.feeSection {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 2px solid #8b0000;
+}
+
+.feeTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 12px 0;
+}
+
+.amountDisplay {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.qrContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+.qrImage {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.upiId {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.qrHint {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+.termsSection {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.termsTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 12px 0;
+}
+
+.termsList {
+    margin: 0 0 16px 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+}
+.termsList li {
+    margin-bottom: 8px;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+.checkboxLabel input {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.successMsg {
+    color: #0a0;
+    font-size: 14px;
+    margin: 0;
+}
+.errorMsg {
+    color: #c00;
+    font-size: 14px;
+    margin: 0;
+}
+
+.submitBtn {
+    background: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.submitBtn:hover:not(:disabled) {
+    background: #6b0000;
+}
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
